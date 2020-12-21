@@ -7,6 +7,7 @@ RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
 RUN apt update && apt upgrade -y && \
     apt install --no-install-recommends -y \
     apt-utils \
+    build-essential \
     debian-keyring \
     debian-archive-keyring \
     build-essential \
