@@ -1,0 +1,11 @@
+{
+    "name": "Pyrogram Documentation",
+    "description": "https://github.com/pyrogram/pyrogram",
+    "stack": "container",
+    "env": {
+        "PORT": {
+            "description": "PORT of the webserver",
+            "required": true
+        }
+    }
+}
