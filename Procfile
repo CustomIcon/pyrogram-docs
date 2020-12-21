@@ -1,1 +1,1 @@
-web: make lhtml --host 0.0.0.0 --port $PORT
+web: php -S 0.0.0.0:$PORT

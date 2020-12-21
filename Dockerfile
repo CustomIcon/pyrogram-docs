@@ -15,6 +15,7 @@ RUN apt update && apt upgrade -y && \
     openssl \
     git \
     gcc \
+    php \
     g++ \
     clang \
     make \
@@ -45,5 +46,9 @@ WORKDIR /pyrogram/docs/
 
 EXPOSE $PORT
 
-CMD ["make", "lhtml", "--host", "0.0.0.0", "--port", "$PORT"]
+RUN make html
+
+WORKDIR /pyrogram/docs/build/html
+
+CMD ["php", "-S", "0.0.0.0:$PORT"]
 
