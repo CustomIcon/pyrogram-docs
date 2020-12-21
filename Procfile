@@ -1,1 +1,1 @@
-web: docs/make lhtml
+web: make lhtml

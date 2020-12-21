@@ -2,4 +2,4 @@ build:
     docker:
         web: Dockerfile
 run:
-    web: docs/make lhtml
+    web: make lhtml
