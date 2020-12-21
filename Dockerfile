@@ -43,4 +43,7 @@ RUN cd docs && \
 
 WORKDIR /pyrogram/docs/
 
-CMD ["make", "lhtml"]
+EXPOSE $PORT
+
+CMD ["make", "lhtml", "--host", "0.0.0.0", "--port", "$PORT"]
+

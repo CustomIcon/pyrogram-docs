@@ -1,1 +1,1 @@
-web: make lhtml
+web: make lhtml --host 0.0.0.0 --port $PORT
