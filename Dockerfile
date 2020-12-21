@@ -23,6 +23,8 @@ RUN apt update && apt upgrade -y && \
 
 RUN git clone https://github.com/pyrogram/pyrogram /pyrogram
 
+RUN python -m pip install --upgrade pip
+
 WORKDIR /pyrogram
 
 RUN pip install -r requirements.txt \
