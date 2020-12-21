@@ -40,4 +40,4 @@ RUN cd docs && \
     cd .. && \
     python setup.py generate --docs
 
-CMD ["docs/make", "lhtml"]
+CMD ["/pyrogram/docs/make", "lhtml"]
